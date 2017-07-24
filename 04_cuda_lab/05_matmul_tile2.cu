@@ -13,8 +13,8 @@ __global__ void MatrixMul(int *M, int *N, int *P, int width)
 
     const int tile_size = 16;
 
-    __shared__ float As[tile_size][tile_size];
-    __shared__ float Bs[tile_size][tile_size];
+    __shared__ int As[tile_size][tile_size];
+    __shared__ int Bs[tile_size][tile_size];
 
     int aBegin = width * tile_size * by;
     int aEnd   = aBegin + width - 1;
@@ -23,7 +23,7 @@ __global__ void MatrixMul(int *M, int *N, int *P, int width)
     int bBegin = tile_size * bx;
     int bStep  = tile_size * width;
 
-    float Csub = 0;
+    int Csub = 0;
     int a, b;
 
     for (a = aBegin, b = bBegin; a <= aEnd; a += aStep, b += bStep)
