@@ -23,7 +23,7 @@ __global__ void MatrixMul(int *M, int *N, int *P, int width)
     int bBegin = tile_size * bx;
     int bStep  = tile_size * width;
 
-    float Csub = 0;
+    int Csub = 0;
     int a, b;
 
     for (a = aBegin, b = bBegin; a <= aEnd; a += aStep, b += bStep)
