@@ -119,9 +119,30 @@ int main(void)
         for(j = 0; j < size; j++)
             if( h_C[i*size+j] != h_gC[i*size+j] ) {
                 printf("Error !\n");
+    for(i = 0; i < size; i++)
+        for(j = 0; j < size; j++)
+            if( h_C[i*size+j] != h_gC[i*size+j] ) {
+                printf("Error !\n");
+                cudaFree(d_A);
+                cudaFree(d_B);
+                cudaFree(d_C);
+                free(h_A);
+                free(h_B);
+                free(h_C);
+                free(h_gC);
                 exit(1);
             }
+
     printf("Success ! \n");
+    
+    cudaFree(d_A);
+    cudaFree(d_B);
+    cudaFree(d_C);
+    free(h_A);
+    free(h_B);
+    free(h_C);
+    free(h_gC);
+
     exit(0);
 
 }
