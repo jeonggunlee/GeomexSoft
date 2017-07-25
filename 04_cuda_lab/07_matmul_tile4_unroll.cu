@@ -29,9 +29,7 @@ __global__ void MatrixMul(int *M, int *N, int *P, int width)
     for (a = aBegin, b = bBegin; a <= aEnd; a += aStep, b += bStep)
     {
         As[ty][tx] = M[a + width * ty + tx];
-        //Memory Coalescing :  N[b + width * tx + ty] -> N[b + width * ty + tx]
-        //Avoid Bank Conflict :  Bs[tx][ty] -> Bs[ty][tx]
-        Bs[ty][tx] = N[b + width * tx + ty];
+        Bs[ty][tx] = N[b + width * ty + tx];
         __syncthreads();
 
         //for (int k = 0; k < tile_size; ++k)
