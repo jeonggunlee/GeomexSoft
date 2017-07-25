@@ -35,7 +35,7 @@ __global__ void MatrixMul(int *M, int *N, int *P, int width)
         for (int k = 0; k < tile_size; ++k)
         {
             // For Memory Coalescing :  Bs[k][tx] -> Bs[tx][k]
-            Csub += As[ty][k] *  Bs[tx][k];
+            Csub += As[ty][k] *  Bs[tx][k]; // Bank Conflict on Bs[tx][k]
             // It causes Bank Conflict
         }
         __syncthreads();
