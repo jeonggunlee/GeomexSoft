@@ -1,3 +1,5 @@
+# Tiled Version 1
+
 #include <stdio.h>
 
 __global__ void MatrixMul(int *M, int *N, int *P, int width)
@@ -29,12 +31,12 @@ __global__ void MatrixMul(int *M, int *N, int *P, int width)
     for (a = aBegin, b = bBegin; a <= aEnd; a += aStep, b += bStep)
     {
         As[ty][tx] = M[a + width * ty + tx];
-        Bs[tx][ty] = N[b + width * tx + ty];  // Not memory coelescing
+        Bs[tx][ty] = N[b + width * tx + ty];  // Not memory coelescing !!!
         __syncthreads();
 
         for (int k = 0; k < tile_size; ++k)
         {
-            Csub += As[ty][k] *  Bs[k][tx];
+            Csub += As[ty][k] *  Bs[k][tx];  // No Bank Conflict
         }
         __syncthreads();
     }
