@@ -1,3 +1,5 @@
+// Please be carefule when you choose matrix size.
+
 #include<stdafx.h>
 #include<omp.h>
 #include<time.h>
