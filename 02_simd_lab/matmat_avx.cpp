@@ -17,6 +17,8 @@ void avx_matmat(float* x, float* y, float* z, size_t n){
 			// Sets all the elements of a float32 vec to zero and returns the float32 vec
 			__m256 acc = _mm256_setzero_ps();
 
+			// To improve its performance, you may transpose the matrix y before do matrix multiplication
+			// Be carefule about the overhead of matrix tranpose operations.
 			for (size_t k = 0; k < n; k++){
 				y_temp[k] = y[j + n*k];
 			}
