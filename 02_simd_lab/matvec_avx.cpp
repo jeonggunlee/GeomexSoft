@@ -9,7 +9,7 @@ void avx_matvec(float* x, float* y, float* z, size_t n){
 	// float* vecCon = (float*)_mm_malloc(8 * sizeof(float), 32);
 	__declspec(align(32)) float vecCon[8];
 
-	for (size_t i = 0; i < n; i += 8){
+	for (size_t i = 0; i < n; i ++){
 		// Sets all the elements of a float32 vector to zero and returns the float32 vector.
 		__m256 acc = _mm256_setzero_ps();
 
