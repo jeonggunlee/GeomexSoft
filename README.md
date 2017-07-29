@@ -9,6 +9,7 @@
   Email: JeongGun.Lee@gmail.com
  
  Date: 26 ~ 28 July 2017
+ 
  Place: 2519 Embedded Lab, Main Building, Hallym University
  
  General Parallel Computing concepts are introduced with well-known programming model.
