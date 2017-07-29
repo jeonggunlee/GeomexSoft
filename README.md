@@ -3,6 +3,7 @@
  Parallel Computing Workshop and Hands on Lab for Geomex Soft Corp.
  Main study materials and lab codes are lectured by Prof. Jeong-Gun Lee
  Dept. of Computer Engineering, Hallym University.
+ 
   Please visit the home site: www.onchip.net
   
   Email: JeongGun.Lee@gmail.com
