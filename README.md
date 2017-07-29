@@ -1,4 +1,4 @@
-# GeomexSoft
+# Parallel Computing Workshop / Hands on Lab for GeomexSoft
 
  Parallel Computing Workshop / Hands on Lab
  ==========================================
