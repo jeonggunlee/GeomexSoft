@@ -16,8 +16,11 @@
  
  Some hands on labs are followed.
  > Pthread
+ 
  > Vector Processing (AVX)
+ 
  > OpenMP
+ 
  > CUDA
 
 
