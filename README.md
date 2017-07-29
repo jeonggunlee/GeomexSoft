@@ -28,3 +28,4 @@
 Jeong-Gun Lee Ph.D/Prof.
 Dept. of Computer Engineering, Hallym University.
  
+ ![Alt text](/img/KakaoTalk_20170728_212942269.jpg)
