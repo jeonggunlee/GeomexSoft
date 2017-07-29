@@ -15,13 +15,10 @@
  General Parallel Computing concepts are introduced with well-known programming model.
  
  Some hands on labs are followed.
- > Pthread
- 
- > Vector Processing (AVX)
- 
- > OpenMP
- 
- > CUDA
+ + Pthread
+ + Vector Processing (AVX)
+ + OpenMP
+ + CUDA
 
 
 
