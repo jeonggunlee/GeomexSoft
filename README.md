@@ -1,13 +1,12 @@
 # GeomexSoft
 
- Parallel Computing Workshop / Hands on Lab for Geomex Soft
- =============================================================
- Main study materials and lab codes are lectured by Prof. Jeong-Gun Lee
- Dept. of Computer Engineering, Hallym University.
+ Parallel Computing Workshop / Hands on Lab
+ ==========================================
+ This is a collection of course materials and lab codes for the parallel computing workshop for Geomex Soft Corporation.
+ All materials and lab codes are lectured and guidedy by Prof. Jeong-Gun Lee
  
-  Please visit the home site: www.onchip.net
-  
-  Email: JeongGun.Lee@gmail.com
+ Please visit the home site: www.onchip.net
+ Email: JeongGun.Lee@gmail.com
  
  Date: 26 ~ 28 July 2017
  
@@ -16,7 +15,13 @@
  General Parallel Computing concepts are introduced with well-known programming model.
  
  Some hands on labs are followed.
- - Pthread
- - Vector Processing (AVX)
- - OpenMP
- - CUDA
+ > Pthread
+ > Vector Processing (AVX)
+ > OpenMP
+ > CUDA
+
+
+
+Jeong-Gun Lee Ph.D/Prof.
+Dept. of Computer Engineering, Hallym University.
+ 
