@@ -5,7 +5,9 @@
  This is a collection of course materials and lab codes for the parallel computing workshop for Geomex Soft Corporation.
  All materials and lab codes are lectured and guidedy by Prof. Jeong-Gun Lee
  
+ 
  Please visit the home site: www.onchip.net
+ 
  Email: JeongGun.Lee@gmail.com
  
  Date: 26 ~ 28 July 2017
