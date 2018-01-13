@@ -3,7 +3,7 @@
  Parallel Computing Workshop / Hands on Lab
  ==========================================
  This is a collection of course materials and lab codes for the parallel computing workshop for Geomex Soft Corporation.
- All materials and lab codes are lectured and guidedy by Prof. Jeong-Gun Lee
+ All materials and lab source codes are lectured in detail and guidedy by Prof. Jeong-Gun Lee
  
  
  Please visit the home site: www.onchip.net
